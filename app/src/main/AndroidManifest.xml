@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.block"
+    >
+    <!--网络权限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true"
+        />
+
+    <!--获取图片权限-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="com.miui.whetstone.permission.ACCESS_PROVIDER"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        tools:replace="android:icon,android:theme,android:allowBackup,android:label,android:supportsRtl"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        >
+
+        <activity android:name="com.example.block.MainGames.gameView.MainActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+
+        <activity android:name="com.example.block.menu.MainMenu"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity android:name="com.example.block.LaunchActivity"
+            android:screenOrientation="landscape"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.block.designCheckpoint.DesignCheckpoint"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity android:name="com.example.block.login.Login"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity android:name="com.example.block.login.Register"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity android:name="com.example.block.menu.ChooseCheckPoint"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+
+        <activity android:name=".menu.ChooseUserCheckpoint"
+            android:screenOrientation="landscape">
+
+
+        </activity>
+       <activity android:name=".menu.SetMenu"
+           android:screenOrientation="landscape">
+
+       </activity>
+        <activity android:name=".menu.EditorNewCheckpoint"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity android:name="top.wuliaodebaozi2.blockgame.loginlibrary.ui.LoginActivity"/>
+    </application>
+
+</manifest>

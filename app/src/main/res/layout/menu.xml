@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:layout_x="200px"
+        android:layout_y="200px"
+        android:background="@drawable/mario"/>
+
+    <Button
+        android:id="@+id/design_checkpoint"
+        android:layout_width="200px"
+        android:layout_height="100px"
+        android:layout_x="1060px"
+        android:layout_y="400px"
+        android:background="@drawable/design_checkpoint"/>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="300px"
+        android:layout_height="150px"
+        android:layout_x="960px"
+        android:layout_y="550px"
+        android:background="@drawable/start"/>
+
+    <TextView
+        android:id="@+id/missionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="700px"
+        android:text="关卡 1-1"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="40px"/>
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_x="1180px"
+        android:layout_y="0dp"
+        android:background="@drawable/set"/>
+    <ImageView
+        android:id="@+id/userImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user_img"
+       />
+    <TextView
+        android:id="@+id/logintext"
+        android:text="未登录 \n 点击登陆。"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</AbsoluteLayout>

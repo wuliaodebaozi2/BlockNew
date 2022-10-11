@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <AbsoluteLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        tools:ignore="MissingConstraints">
+
+        <ListView
+            android:id="@+id/user_checkpoint_name_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:background="@drawable/listview_bg"/>
+
+        <EditText
+            android:id="@+id/user_checkpoint_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入关卡名"
+            android:background="@drawable/edit_background"
+            android:textSize="12sp"
+            android:imeOptions="flagNoExtractUi"/>
+        <Button
+            android:id="@+id/start_user_checkpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/user_checkpoint_name_listview_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/user_checkpoint_name_listview_head"/>
+
+        <EditText
+            android:id="@+id/search_with_keyword_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_background"
+            android:imeOptions="flagNoExtractUi"/>
+
+        <Button
+            android:id="@+id/search_with_keyword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_with_keyword"/>
+        <Button
+            android:id="@+id/my_checkpoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_checkpoint"/>
+    </AbsoluteLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".designCheckpoint.DesignCheckpoint"
+    android:background="@color/colorAccent">
+
+
+    <AbsoluteLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="MissingConstraints"
+        >
+
+        <com.example.block.designCheckpoint.DesignCheckpointSurface
+            android:id="@+id/DesignCheckpointSurface"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <Button
+            android:id="@+id/mushroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="484dp"
+            android:layout_y="0dp"
+            android:background="@drawable/mushroom"
+            />
+        <Button
+            android:id="@+id/block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="484dp"
+            android:layout_y="0dp"
+            android:background="@drawable/block"
+            />
+        <Button
+            android:id="@+id/moneyblock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="484dp"
+            android:layout_y="0dp"
+            android:background="@drawable/moneyblock"
+            />
+        <Button
+            android:id="@+id/fire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="484dp"
+            android:layout_y="0dp"
+            android:background="@drawable/fire"
+            />
+        <Button
+            android:id="@+id/sewerPipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="484dp"
+            android:layout_y="0dp"
+            android:background="@drawable/sewerpipe"
+            />
+
+
+        <Button
+            android:id="@+id/fixed"
+            android:background="@drawable/fixed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="167dp"
+            android:layout_x="230dp"
+            android:layout_y="217dp" />
+
+        <Button
+            android:id="@+id/delete"
+            android:background="@drawable/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/up"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-139dp"
+            android:layout_x="474dp"
+            android:layout_y="218dp"
+            android:text="上" />
+
+        <Button
+            android:id="@+id/bottom"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_x="474dp"
+            android:layout_y="305dp"
+            android:text="下" />
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_x="436dp"
+            android:layout_y="264dp"
+            android:text="左" />
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:layout_x="514dp"
+            android:layout_y="253dp"
+            android:text="右" />
+
+
+        <Button
+            android:id="@+id/leftBt"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/left" />
+
+        <Button
+            android:id="@+id/rightBt"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/right" />
+        <Button
+            android:id="@+id/complet"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="@drawable/complet"/>
+        <TextView
+            android:id="@+id/back_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:text="卷轴移动，卷轴水平坐标：200"/>
+        <TextView
+            android:id="@+id/adjust_view_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:text="正在调整当前元素位置"/>
+
+        <View
+            android:id="@+id/adjust_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/adjust_view_bg"
+            >
+
+        </View>
+
+        <EditText
+            android:id="@+id/scroll_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_background"/>
+
+        <EditText
+            android:id="@+id/adjust_view_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="x:"
+            android:background="@drawable/edit_background"
+            android:imeOptions="flagNoExtractUi"/>
+
+        <EditText
+            android:id="@+id/adjust_view_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="y:"
+            android:background="@drawable/edit_background"
+            android:imeOptions="flagNoExtractUi"/>
+
+        <Button
+            android:id="@+id/pre_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pre_view"/>
+        <Button
+            android:id="@+id/next_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_view"/>
+
+
+        <Button
+            android:id="@+id/instructions_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/instructions_bt"/>
+    </AbsoluteLayout>
+
+    <ImageView
+        android:id="@+id/instructions"
+        android:layout_width="650px"
+        android:layout_height="360px"
+        android:background="@drawable/instructions"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
