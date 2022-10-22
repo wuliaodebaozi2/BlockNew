@@ -84,5 +84,6 @@ dependencies {
 
 //    implementation(name:'loginlibrary-release', ext:'aar')
     implementation files('libs/loginlibrary-release.aar')
+    implementation files('libs/androidgitlibrary-release.aar')
 
 }
