@@ -59,14 +59,6 @@
             android:screenOrientation="landscape">
 
         </activity>
-        <activity android:name="com.example.block.login.Login"
-            android:screenOrientation="landscape"
-            android:windowSoftInputMode="adjustResize">
-        </activity>
-        <activity android:name="com.example.block.login.Register"
-            android:screenOrientation="landscape">
-
-        </activity>
         <activity android:name="com.example.block.menu.ChooseCheckPoint"
             android:screenOrientation="landscape">
 
