@@ -43,7 +43,8 @@
         </activity>
 
         <activity android:name="com.example.block.menu.MainMenu"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape"
+            android:launchMode="singleInstance">
 
         </activity>
         <activity android:name="com.example.block.LaunchActivity"

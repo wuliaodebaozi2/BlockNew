@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.Display;
 import android.view.MotionEvent;
 import android.view.View;
@@ -30,6 +31,13 @@ import top.wuliaodebaozi2.blockgame.loginlibrary.ui.LoginActivity;
 
 
 public class MainMenu extends Activity implements View.OnTouchListener{
+
+    //登录页面附加key
+    //用于登录成功后跳转
+    public static final String ACTIVITY_LOGIN_SUCCESS_NEED_NAVIGATION_KEY = "activity_login_success_need_navigation_key";
+
+    public static final String TAG = "MainMenu";
+
     @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +78,7 @@ public class MainMenu extends Activity implements View.OnTouchListener{
 //                intent.setClass(MainMenu.this, Login.class);
 //                startActivityForResult(intent,0x1);
                 Intent intent = new Intent();
+                intent.putExtra(ACTIVITY_LOGIN_SUCCESS_NEED_NAVIGATION_KEY,"com.example.block.menu.MainMenu");
                 intent.setClass(MainMenu.this, LoginActivity.class);
                 startActivityForResult(intent,0x1);
             }
@@ -82,6 +91,7 @@ public class MainMenu extends Activity implements View.OnTouchListener{
 //                intent.setClass(MainMenu.this, Login.class);
 //                startActivityForResult(intent,0x1);
                 Intent intent = new Intent();
+                intent.putExtra(ACTIVITY_LOGIN_SUCCESS_NEED_NAVIGATION_KEY,"com.example.block.menu.MainMenu");
                 intent.setClass(MainMenu.this, LoginActivity.class);
                 startActivityForResult(intent,0x1);
             }
@@ -209,6 +219,7 @@ public class MainMenu extends Activity implements View.OnTouchListener{
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         // TODO Auto-generated method stub
         //如果data等于null返回
+        Log.d(TAG,"返回结果" + data);
         if(data==null)
             return ;
         String phoneNumber=data.getExtras().getString("usersid");
