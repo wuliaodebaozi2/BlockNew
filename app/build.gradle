@@ -87,5 +87,7 @@ dependencies {
     implementation files('libs/loginserver-release.aar')
     implementation files('libs/androidgitlibrary-release.aar')
     implementation group: 'org.eclipse.jgit', name: 'org.eclipse.jgit', version: "${JGIT_VERSION}"
+    //数据库加密
+    implementation "net.zetetic:android-database-sqlcipher:${SQLCIPHER_VERSION}"
 
 }
